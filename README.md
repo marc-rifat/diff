@@ -2,6 +2,8 @@
 
 A simple difference checker built with Next.js and Monaco Editor. Compare text files side-by-side or inline.
 
+[**Live Demo**](https://diff-dxc.pages.dev/)
+
 ## Features
 
 - **Side-by-Side & Inline Views**: Toggle between split view and unified view.

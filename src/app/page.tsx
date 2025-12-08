@@ -200,6 +200,10 @@ export default function Home() {
   };
 
   const handlePaste = async (side: 'original' | 'modified') => {
+    if (typeof navigator === 'undefined' || !navigator.clipboard) {
+        alert("Clipboard access is not available in this environment. Please use Ctrl+V/Cmd+V to paste directly into the editor.");
+        return;
+    }
     try {
       const text = await navigator.clipboard.readText();
       if (side === 'original') {
